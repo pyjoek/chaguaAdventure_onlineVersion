@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>chagua adventures</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+    
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            /* Hide the dropdown menu by default */
+    .dropdown-submenu .dropdown-menu {
+        display: none;
+    }
+    
+    /* Show the dropdown menu when hovering over the parent <li> */
+    .dropdown-submenu:hover .dropdown-menu {
+        display: block;
+    }
+    
+    /* Optional: You can add styles for better appearance */
+    .dropdown-submenu .dropdown-menu {
+        position: absolute;
+        top: 60%;
+        left: 50%;  /* To make the submenu appear to the right of the main menu */
+        top: 0;
+        z-index: 10000;  /* Ensure the submenu is above other elements */
+    }
+    
+    @media (max-width: 992px) {  /* Adjust for tablets and smaller */
+        .dropdown-submenu .dropdown-menu {
+            position: static;   /* Makes it appear below the parent */
+            width: 100%;        /* Full width for better usability */
+            display: none;
+        }
+        .dropdown-submenu:hover .dropdown-menu {
+            display: block;
+        }
+    }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <!-- <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+            <div class="row gx-0">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="                                                                    "><i class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div> -->
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+<div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="" class="navbar-brand p-0">
+            <h1 class="m-0">
+                <img src="img/logo.png" alt="See Zanzibar Logo" style="max-height: 50px; margin-right: 10px;">
+                Chagua Adventure
+            </h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="services.html" class="nav-item nav-link">Services</a>
+                        <a href="hotel.html" class="nav-item nav-link">Hotels</a>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Safaris & Tours
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="tanzania.html">Tanzania Day Trips</a></li>
+                                <!-- <li><a class="dropdown-item" href="#">Safari Programs Out of Zanzibar</a></li> -->
+                                <li><a class="dropdown-item" href="luxury-african-safaris.html">Luxury African Safaris</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Zanzibar Day Trips</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="cityTour.html">City Tour</a></li>
+                                        <li><a class="dropdown-item" href="swahiliTour.html">Swahili Cultural Tour</a></li>
+                                        <li><a class="dropdown-item" href="jozani.html">Jozani Forest</a></li>
+                                        <li><a class="dropdown-item" href="spice.html">Spice Tour</a></li>
+                                        <li><a class="dropdown-item" href="prison.html">Prison Island</a></li>
+                                        <li><a class="dropdown-item" href="kizimkazi.html">Kizimkazi Dolphin Tour</a></li>
+                                        <li><a class="dropdown-item" href="gameFishing.html">Game Fishing</a></li>
+                                        <li><a class="dropdown-item" href="slavecave.html">Slave Cave</a></li>
+                                        <li><a class="dropdown-item" href="seaweed.html">Seaweed Farming</a></li>
+                                        <li><a class="dropdown-item" href="butterflies.html">Butterflies Zoo</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="packages.html" class="nav-item nav-link">Packages</a>
+                        <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="#tour-booking" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
+                </div>
+            </nav>
+            </div>
+        <!-- Topbar End -->
+
+
+    
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4">Travel Packages</h1>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-white">Packages</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+
+
+        <!-- Packages Start -->
+<div class="container-fluid packages py-5">
+    <div class="container py-5">
+        <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+            <h5 class="section-title px-3">Packages</h5>
+            <h1 class="mb-0">Awesome Packages</h1>
+        </div>
+        <!-- Removed the owl-carousel class and added a grid layout for the packages -->
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img/packagescuza.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Kuza Cave</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tour</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Kuza Cave</h5>
+                            <small class="text-uppercase">Tour</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">Explore the hidden Kuza Cave, a unique underground experience where you can marvel at natural formations and learn about the area's rich history and culture.</p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img/packagesdol.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Dolphin Tour</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tour</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Dolphin Tour</h5>
+                            <small class="text-uppercase">Tour</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">Enjoy a thrilling dolphin tour, where you can swim and interact with these playful creatures in their natural habitat off the coast of Zanzibar.</p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img/packagesjoz.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Jozani Forest</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tours</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Jozani Forest</h5>
+                            <small class="text-uppercase">Tours</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">Discover the beauty of Jozani Forest, home to the famous red colobus monkeys, lush green vegetation, and tranquil walking paths surrounded by nature.</p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img/packagesmnemb.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Mnemba Tour</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tour</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Mnemba Tour</h5>
+                            <small class="text-uppercase">Tour</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">Embark on a boat ride to Mnemba Island, where you can snorkel in clear waters and witness vibrant coral reefs and abundant marine life.</p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img/packagesprison.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Prison Island</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tours</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Prison Island</h5>
+                            <small class="text-uppercase">Tours</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">ake a boat trip to Prison Island, famous for its historical ruins and giant tortoises, offering a mix of culture, history, and natural beauty.</p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img/packagesstandup.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Stand Up Paddling in Zanzibar</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tours</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Stand Up Paddling in Zanzibar</h5>
+                            <small class="text-uppercase">Tours</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">Try stand-up paddling in Zanzibar, a fun and relaxing activity that allows you to explore the coastline while enjoying the calm, clear waters.</p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img/packagesjetski.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Jetski & Kayaki Tours in Zanzibar</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tours</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Jetski & Kayaki Tours in Zanzibar</h5>
+                            <small class="text-uppercase">Tours</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">Feel the adrenaline rush with a jetski or kayaking tour along Zanzibar’s coastline, offering an exciting way to explore the island’s waters.</p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img/packagesstonetown.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Stone Town City Tour</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tours</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Stone Town City Tour</h5>
+                            <small class="text-uppercase">Tours</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">Take a guided city tour of Stone Town, a UNESCO World Heritage site, and explore its rich cultural heritage, ancient buildings, and vibrant markets.</p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img/packagesspicefarm.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Spice Farm</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tours</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Spice Farm</h5>
+                            <small class="text-uppercase">TOurs</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">Explore the Spice Farm with a romantic touch, where you and your partner can enjoy learning about Zanzibar's spice cultivation and enjoy a peaceful, sensory experience.</p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img/packagesaqua.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Turtle Aquarium</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tours</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Turtle Aquarium</h5>
+                            <small class="text-uppercase">TOurs</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">Visit the Turtle Aquarium and learn about the conservation efforts to protect sea turtles while observing these amazing creatures up close.</p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img/packagesvillage.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Village Tour</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tours</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Village Tour</h5>
+                            <small class="text-uppercase">Tours</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">Explore Zanzibar's villages on a guided tour, where you'll get to learn about local life, witness traditional crafts, and enjoy authentic cultural experiences.</p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img/packagesnungwi.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Nungwi Sandbank</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tours</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Nungwi Sandbank</h5>
+                            <small class="text-uppercase">Tours</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">Visit the beautiful Nungwi Sandbank, an idyllic location perfect for swimming, relaxing on the beach, or simply enjoying the untouched beauty of Zanzibar’s coastline.</p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img/packagesnakupenda.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Nakupenda & Prison Island Tour</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>tours</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Nakupenda & Prison Island Tour</h5>
+                            <small class="text-uppercase">Tours</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">Take a tour combining Nakupenda Beach and Prison Island, where you’ll explore stunning white sand beaches and encounter historical landmarks and wildlife.</p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img/packagesdeepsea.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Deep Sea Fishing in Zanzibar</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tours</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Deep Sea Fishing in Zanzibar</h5>
+                            <small class="text-uppercase">Tours</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">Experience deep-sea fishing in Zanzibar, where you’ll have the chance to catch big game fish while enjoying the peaceful, open waters of the Indian Ocean.</p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img/packagessunset.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Sunset Cruise </small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tours</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Sunset Cruise </h5>
+                            <small class="text-uppercase">Tours</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">Experience the magic of a sunset dhow cruise, where you can relax and enjoy panoramic views of Zanzibar’s coastline, all for an affordable price.</p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img/packagestumbatu.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Tumbatu with Starfish Island</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tours</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Tumbatu with Starfish Island</h5>
+                            <small class="text-uppercase">Tours</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">Visit the stunning Tumbatu Island and Starfish Island, where you’ll encounter pristine beaches, crystal-clear waters, and unique local cultures.</p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img/packagehelcopita.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Helicopter day tour & safaris</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tours</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Helcopter day tour & safaris</h5>
+                            <small class="text-uppercase">Tours</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">Helicopter Day Tours and Safaris can be done in several destinations around Arusha and Moshi where we have permits to fly and land. </p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img/packagessafaritz.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Day Safaris</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tours</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Day Safaris</h5>
+                            <small class="text-uppercase">Tours</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">Day Tours and Safaris from Arusha and Moshi are the suitable for clients with short time in Tanzania who doesn’t want to miss seeing the Tanzania Wilderness.</p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img/packagemanyara.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Lake Manyara</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tours</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Lake Manyara</h5>
+                            <small class="text-uppercase">Tours</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">ake a trip to Lake Manyara. This shallow lake in the the East African Rift said by Ernest Hemingway to be the "loveliest [lake] ... in Africa,"</p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img src="img//packagesarusha.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Arusha National Park</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tour</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                            </div>
+                            
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">Arusha National Park</h5>
+                                <small class="text-uppercase">Tour</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p class="mb-4">Lying between the peaks of Kilimanjaro and Meru, Arusha National Park is an area of outstanding beauty. The Park has a wide range of habitats, the  summit of Mt. Meru </p>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="packages-item">
+                        <div class="packages-img">
+                            <img src="img/packageskilikili.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                            <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>  Kilimanjaro day Tour</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tour</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                            </div>
+                            
+                        </div>
+                        <div class="packages-content bg-light">
+                            <div class="p-4 pb-0">
+                                <h5 class="mb-0">Kilimanjaro day Tour</h5>
+                                <small class="text-uppercase">Tour</small>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <p class="mb-4"> one day trek to the first camp from the Entrance Gate or Staring point with your Trekking Guide. We recommend starting at Marangu Gate as there</p>
+                            </div>
+                            <div class="row bg-primary rounded-bottom mx-0">
+                                <div class="col-6 text-start px-0">
+
+                                </div>
+                                <div class="col-6 text-end px-0">
+                                    <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- Packages End -->
+
+         <!-- Footer Start -->
+<div class="container-fluid footer py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-6 col-xl-5">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white" id="footer-get-in-touch">Get In Touch</h4>
+                    <p><i class="fas fa-home me-2"></i><span id="footer-address">Zanzibar, Tanzania</span></p>
+                    <p><i class="fas fa-envelope me-2"></i><span id="footer-email"><a href="mailto:reservation@chaguaadventure.com">reservation@chaguaadventure.com</a></span></p>
+                    <p><i class="fas fa-envelope me-2"></i><a href="mailto:info@chaguaadventure.com" id="footer-email">info@chaguaadventure.com</a></p>
+                    <p><i class="fab fa-whatsapp me-2"></i><a href="https://wa.me/254796302036" target="_blank">+254 796 302 036</a></p>
+                    <p><i class="fab fa-whatsapp me-2"></i><a href="https://wa.me/255772656264" target="_blank">+255 772 656 264</a></p>
+                    <div class="d-flex align-items-center">
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/chagua.adventure/" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white" id="footer-company-title">Day Tours</h4>
+                    <a href="cityTour.html"><span id="footer-about">City Tour</span></a>
+                    <a href="swahiliTour.html"><span id="footer-careers">Swahili Cultural Tour</span></a>
+                    <a href="jozani.html"><span id="footer-blog">Jozani Forest</span></a>
+                    <a href="spice.html"><span id="footer-press">Spice Tour</span></a>
+                    <a href="prison.html"><span id="footer-gift-cards">Prison Islan</span></a>
+                    <a href="safeBlue.html"><span id="footer-magazine">Safari Blue</span></a>
+                    <a href="kizimkazi.html"><span id="footer-magazine">Kizimkazi Dolphines</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white" id="footer-support-title">Wild Safaris</h4>
+                    <a href="gombe.html"><span id="footer-contact">Gombe National Park</span></a>
+                    <a href="mikumi.html"><span id="footer-legal-notice">Mikumi National Park</span></a>
+                    <a href="ruaha.html"><span id="footer-privacy-policy">Ruaha National Park</span></a>
+                    <a href="selous.html"><span id="footer-terms">Selous Game Reserve</span></a>
+                    <a href="arusha.html"><span id="footer-sitemap">Arusha National Park</span></a>
+                    <a href="tarangire.html"><span id="footer-cookie-policy">Tarangire National Park</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<script>
+    // Translation Data
+    const translations = {
+        en: {
+            "footer-get-in-touch": "Get In Touch",
+            "footer-address": "Zanzibar, Tanzania",
+            "footer-email": "info@happytours.com",
+            "footer-phone": "+255 123 456 789",
+            "footer-fax": "+255 123 456 789",
+            "footer-company-title": "Company",
+            "footer-about": "About Us",
+            "footer-careers": "Careers",
+            "footer-blog": "Blog",
+            "footer-press": "Press",
+            "footer-gift-cards": "Gift Cards",
+            "footer-magazine": "Safari Magazine",
+            "footer-support-title": "Support",
+            "footer-contact": "Contact Us",
+            "footer-legal-notice": "Legal Notice",
+            "footer-privacy-policy": "Privacy Policy",
+            "footer-terms": "Terms and Conditions",
+            "footer-sitemap": "Sitemap",
+            "footer-cookie-policy": "Cookie Policy"
+        },
+        sw: {
+            "footer-get-in-touch": "Wasiliana Nasi",
+            "footer-address": "Zanzibar, Tanzania",
+            "footer-email": "info@happytours.com",
+            "footer-phone": "+255 123 456 789",
+            "footer-fax": "+255 123 456 789",
+            "footer-company-title": "Kampuni",
+            "footer-about": "Kuhusu Sisi",
+            "footer-careers": "Ajira",
+            "footer-blog": "Blogu",
+            "footer-press": "Vyombo vya Habari",
+            "footer-gift-cards": "Kadi za Zawadi",
+            "footer-magazine": "Jarida la Safari",
+            "footer-support-title": "Msaada",
+            "footer-contact": "Wasiliana Nasi",
+            "footer-legal-notice": "Taarifa ya Kisheria",
+            "footer-privacy-policy": "Sera ya Faragha",
+            "footer-terms": "Sheria na Masharti",
+            "footer-sitemap": "Ramani ya Tovuti",
+            "footer-cookie-policy": "Sera ya Vidakuzi"
+        }
+        // Add more translations here
+    };
+
+    // Update the website based on the selected language
+    document.getElementById("language-select").addEventListener("change", function() {
+        const lang = this.value;
+        const elements = document.querySelectorAll("[id^='footer-']");
+        elements.forEach(el => {
+            const key = el.id;
+            el.textContent = translations[lang][key];
+        });
+    });
+</script>
+
+        
+        
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Get the current page file name (e.g., index.html, about.html, etc.)
+                let currentPage = window.location.pathname.split("/").pop();
+                
+                // If no file name is found (e.g., if accessing the root directory), default to index.html
+                if (currentPage === "" || currentPage === "index.html") {
+                    currentPage = "index.html";
+                }
+        
+                // Get all navigation links
+                let navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        
+                // Loop through each link to check and apply the 'active' class
+                navLinks.forEach(link => {
+                    let linkPage = link.getAttribute("href");
+                    if (linkPage === currentPage) {
+                        link.classList.add("active");
+                    } else {
+                        link.classList.remove("active");
+                    }
+                });
+            });
+        </script>
+        
+    </body>
+
+</html>

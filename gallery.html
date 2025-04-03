@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>chagua adventures</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+    
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            /* Hide the dropdown menu by default */
+    .dropdown-submenu .dropdown-menu {
+        display: none;
+    }
+    
+    /* Show the dropdown menu when hovering over the parent <li> */
+    .dropdown-submenu:hover .dropdown-menu {
+        display: block;
+    }
+    
+    /* Optional: You can add styles for better appearance */
+    .dropdown-submenu .dropdown-menu {
+        position: absolute;
+        top: 60%;
+        left: 50%;  /* To make the submenu appear to the right of the main menu */
+        top: 0;
+        z-index: 10000;  /* Ensure the submenu is above other elements */
+    }
+    
+    @media (max-width: 992px) {  /* Adjust for tablets and smaller */
+        .dropdown-submenu .dropdown-menu {
+            position: static;   /* Makes it appear below the parent */
+            width: 100%;        /* Full width for better usability */
+            display: none;
+        }
+        .dropdown-submenu:hover .dropdown-menu {
+            display: block;
+        }
+    }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <!-- <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+            <div class="row gx-0">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="                                                                    "><i class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div> -->
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+<div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="" class="navbar-brand p-0">
+            <h1 class="m-0">
+                <img src="img/logo.png" alt="See Zanzibar Logo" style="max-height: 50px; margin-right: 10px;">
+                Chagua Adventure
+            </h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="services.html" class="nav-item nav-link">Services</a>
+                        <a href="hotel.html" class="nav-item nav-link">Hotels</a>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Safaris & Tours
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="tanzania.html">Tanzania Day Trips</a></li>
+                                <!-- <li><a class="dropdown-item" href="#">Safari Programs Out of Zanzibar</a></li> -->
+                                <li><a class="dropdown-item" href="luxury-african-safaris.html">Luxury African Safaris</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Zanzibar Day Trips</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="cityTour.html">City Tour</a></li>
+                                        <li><a class="dropdown-item" href="swahiliTour.html">Swahili Cultural Tour</a></li>
+                                        <li><a class="dropdown-item" href="jozani.html">Jozani Forest</a></li>
+                                        <li><a class="dropdown-item" href="spice.html">Spice Tour</a></li>
+                                        <li><a class="dropdown-item" href="prison.html">Prison Island</a></li>
+                                        <li><a class="dropdown-item" href="kizimkazi.html">Kizimkazi Dolphin Tour</a></li>
+                                        <li><a class="dropdown-item" href="gameFishing.html">Game Fishing</a></li>
+                                        <li><a class="dropdown-item" href="slavecave.html">Slave Cave</a></li>
+                                        <li><a class="dropdown-item" href="seaweed.html">Seaweed Farming</a></li>
+                                        <li><a class="dropdown-item" href="butterflies.html">Butterflies Zoo</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="packages.html" class="nav-item nav-link">Packages</a>
+                        <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="#tour-booking" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
+                </div>
+            </nav>
+            </div>
+        <!-- Topbar End -->
+
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4">Our Gallery</h1>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-white">Gallery</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+      
+        <!-- Gallery Start -->
+<div class="container-fluid gallery py-5 my-5">
+    <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+        <h5 class="section-title px-3">Explore Our Collection</h5>
+        <h1 class="mb-4">Memorable Moments from Our Tours.</h1>
+        <p class="mb-0">Discover breathtaking adventures and unforgettable experiences. Explore the beauty of nature, culture, and thrilling journeys that await you.</p>
+    </div>
+    <div class="tab-class text-center">
+        <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+            <li class="nav-item">
+                <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#GalleryTab-1">
+                    <span class="text-dark" style="width: 150px;">All Tours</span>
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="GalleryTab-1" class="tab-pane fade show p-0 active">
+                <div class="row g-2">
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-1.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-1.jpg" data-lightbox="gallery-1" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-2.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-3.jpg" data-lightbox="gallery-3" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-4.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-4.jpg" data-lightbox="gallery-4" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-5.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-5.jpg" data-lightbox="gallery-5" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-6.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-6.jpg" data-lightbox="gallery-6" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-7.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-7.jpg" data-lightbox="gallery-7" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-8.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-8.jpg" data-lightbox="gallery-8" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-9.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-9.jpg" data-lightbox="gallery-9" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-10.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-10.jpg" data-lightbox="gallery-10" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-11.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-11.jpg" data-lightbox="gallery-11" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-12.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-12.jpg" data-lightbox="gallery-12" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-13.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-13.jpg" data-lightbox="gallery-13" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-14.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-14.jpg" data-lightbox="gallery-14" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-15.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-15.jpg" data-lightbox="gallery-15" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-16.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-16.jpg" data-lightbox="gallery-16" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-17.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-17.jpg" data-lightbox="gallery-17" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-19.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-19.jpg" data-lightbox="gallery-19" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-24.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-24.jpg" data-lightbox="gallery-20" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-22.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-22.jpg" data-lightbox="gallery-20" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-23.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-23.jpg" data-lightbox="gallery-20" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-21.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-21.jpg" data-lightbox="gallery-21" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-18.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-18.jpg" data-lightbox="gallery-18" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-20.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-20.jpg" data-lightbox="gallery-20" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="GalleryTab-2" class="tab-pane fade show p-0">
+                <div class="row g-2">
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-2.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-3.jpg" data-lightbox="gallery-3" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="GalleryTab-3" class="tab-pane fade show p-0">
+                <div class="row g-2">
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-2.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-3.jpg" data-lightbox="gallery-3" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="GalleryTab-4" class="tab-pane fade show p-0">
+                <div class="row g-2">
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-2.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-3.jpg" data-lightbox="gallery-3" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="GalleryTab-5" class="tab-pane fade show p-0">
+                <div class="row g-2">
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-2.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                        <div class="gallery-item h-100">
+                            <img src="img/gallery-3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                            <div class="gallery-content">
+                                <div class="gallery-info">
+                                    <h5 class="text-white text-uppercase mb-2">Tour</h5>
+                                    <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                            <div class="gallery-plus-icon">
+                                <a href="img/gallery-3.jpg" data-lightbox="gallery-3" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Gallery End -->
+
+     <!-- Footer Start -->
+<div class="container-fluid footer py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-6 col-xl-5">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white" id="footer-get-in-touch">Get In Touch</h4>
+                    <p><i class="fas fa-home me-2"></i><span id="footer-address">Zanzibar, Tanzania</span></p>
+                    <p><i class="fas fa-envelope me-2"></i><span id="footer-email"><a href="mailto:reservation@chaguaadventure.com">reservation@chaguaadventure.com</a></span></p>
+                    <p><i class="fas fa-envelope me-2"></i><a href="mailto:info@chaguaadventure.com" id="footer-email">info@chaguaadventure.com</a></p>
+                    <p><i class="fab fa-whatsapp me-2"></i><a href="https://wa.me/254796302036" target="_blank">+254 796 302 036</a></p>
+                    <p><i class="fab fa-whatsapp me-2"></i><a href="https://wa.me/255772656264" target="_blank">+255 772 656 264</a></p>
+                    <div class="d-flex align-items-center">
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/chagua.adventure/" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white" id="footer-company-title">Day Tours</h4>
+                    <a href="cityTour.html"><span id="footer-about">City Tour</span></a>
+                    <a href="swahiliTour.html"><span id="footer-careers">Swahili Cultural Tour</span></a>
+                    <a href="jozani.html"><span id="footer-blog">Jozani Forest</span></a>
+                    <a href="spice.html"><span id="footer-press">Spice Tour</span></a>
+                    <a href="prison.html"><span id="footer-gift-cards">Prison Islan</span></a>
+                    <a href="safeBlue.html"><span id="footer-magazine">Safari Blue</span></a>
+                    <a href="kizimkazi.html"><span id="footer-magazine">Kizimkazi Dolphines</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white" id="footer-support-title">Wild Safaris</h4>
+                    <a href="gombe.html"><span id="footer-contact">Gombe National Park</span></a>
+                    <a href="mikumi.html"><span id="footer-legal-notice">Mikumi National Park</span></a>
+                    <a href="ruaha.html"><span id="footer-privacy-policy">Ruaha National Park</span></a>
+                    <a href="selous.html"><span id="footer-terms">Selous Game Reserve</span></a>
+                    <a href="arusha.html"><span id="footer-sitemap">Arusha National Park</span></a>
+                    <a href="tarangire.html"><span id="footer-cookie-policy">Tarangire National Park</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+ 
+<script>
+    // Translation Data
+    const translations = {
+        en: {
+            "footer-get-in-touch": "Get In Touch",
+            "footer-address": "Zanzibar, Tanzania",
+            "footer-email": "info@happytours.com",
+            "footer-phone": "+255 123 456 789",
+            "footer-fax": "+255 123 456 789",
+            "footer-company-title": "Company",
+            "footer-about": "About Us",
+            "footer-careers": "Careers",
+            "footer-blog": "Blog",
+            "footer-press": "Press",
+            "footer-gift-cards": "Gift Cards",
+            "footer-magazine": "Safari Magazine",
+            "footer-support-title": "Support",
+            "footer-contact": "Contact Us",
+            "footer-legal-notice": "Legal Notice",
+            "footer-privacy-policy": "Privacy Policy",
+            "footer-terms": "Terms and Conditions",
+            "footer-sitemap": "Sitemap",
+            "footer-cookie-policy": "Cookie Policy"
+        },
+        sw: {
+            "footer-get-in-touch": "Wasiliana Nasi",
+            "footer-address": "Zanzibar, Tanzania",
+            "footer-email": "info@happytours.com",
+            "footer-phone": "+255 123 456 789",
+            "footer-fax": "+255 123 456 789",
+            "footer-company-title": "Kampuni",
+            "footer-about": "Kuhusu Sisi",
+            "footer-careers": "Ajira",
+            "footer-blog": "Blogu",
+            "footer-press": "Vyombo vya Habari",
+            "footer-gift-cards": "Kadi za Zawadi",
+            "footer-magazine": "Jarida la Safari",
+            "footer-support-title": "Msaada",
+            "footer-contact": "Wasiliana Nasi",
+            "footer-legal-notice": "Taarifa ya Kisheria",
+            "footer-privacy-policy": "Sera ya Faragha",
+            "footer-terms": "Sheria na Masharti",
+            "footer-sitemap": "Ramani ya Tovuti",
+            "footer-cookie-policy": "Sera ya Vidakuzi"
+        }
+        // Add more translations here
+    };
+
+    // Update the website based on the selected language
+    document.getElementById("language-select").addEventListener("change", function() {
+        const lang = this.value;
+        const elements = document.querySelectorAll("[id^='footer-']");
+        elements.forEach(el => {
+            const key = el.id;
+            el.textContent = translations[lang][key];
+        });
+    });
+</script>
+
+        
+        
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Get the current page file name (e.g., index.html, about.html, etc.)
+                let currentPage = window.location.pathname.split("/").pop();
+                
+                // If no file name is found (e.g., if accessing the root directory), default to index.html
+                if (currentPage === "" || currentPage === "index.html") {
+                    currentPage = "index.html";
+                }
+        
+                // Get all navigation links
+                let navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        
+                // Loop through each link to check and apply the 'active' class
+                navLinks.forEach(link => {
+                    let linkPage = link.getAttribute("href");
+                    if (linkPage === currentPage) {
+                        link.classList.add("active");
+                    } else {
+                        link.classList.remove("active");
+                    }
+                });
+            });
+        </script>
+        
+    </body>
+
+</html>

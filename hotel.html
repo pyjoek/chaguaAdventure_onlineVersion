@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>chagua adventures</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/citytour.css" rel="stylesheet">
+    <style>
+        /* Hide the dropdown menu by default */
+.dropdown-submenu .dropdown-menu {
+    display: none;
+}
+
+/* Show the dropdown menu when hovering over the parent <li> */
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
+/* Optional: You can add styles for better appearance */
+.dropdown-submenu .dropdown-menu {
+    position: absolute;
+    top: 60%;
+    left: 50%;  /* To make the submenu appear to the right of the main menu */
+    top: 0;
+    z-index: 10000;  /* Ensure the submenu is above other elements */
+}
+
+@media (max-width: 992px) {  /* Adjust for tablets and smaller */
+    .dropdown-submenu .dropdown-menu {
+        position: static;   /* Makes it appear below the parent */
+        width: 100%;        /* Full width for better usability */
+        display: none;
+    }
+    .dropdown-submenu:hover .dropdown-menu {
+        display: block;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar & Hero Start -->
+<div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="" class="navbar-brand p-0">
+            <h1 class="m-0">
+                <img src="img/logo.png" alt="See Zanzibar Logo" style="max-height: 50px; margin-right: 10px;">
+                Chagua Adventure
+            </h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="services.html" class="nav-item nav-link">Services</a>
+                        <a href="hotel.html" class="nav-item nav-link">Hotels</a>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Safaris & Tours
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="tanzania.html">Tanzania Day Trips</a></li>
+                                <!-- <li><a class="dropdown-item" href="#">Safari Programs Out of Zanzibar</a></li> -->
+                                <li><a class="dropdown-item" href="luxury-african-safaris.html">Luxury African Safaris</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Zanzibar Day Trips</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="cityTour.html">City Tour</a></li>
+                                        <li><a class="dropdown-item" href="swahiliTour.html">Swahili Cultural Tour</a></li>
+                                        <li><a class="dropdown-item" href="jozani.html">Jozani Forest</a></li>
+                                        <li><a class="dropdown-item" href="spice.html">Spice Tour</a></li>
+                                        <li><a class="dropdown-item" href="prison.html">Prison Island</a></li>
+                                        <li><a class="dropdown-item" href="kizimkazi.html">Kizimkazi Dolphin Tour</a></li>
+                                        <li><a class="dropdown-item" href="gameFishing.html">Game Fishing</a></li>
+                                        <li><a class="dropdown-item" href="slavecave.html">Slave Cave</a></li>
+                                        <li><a class="dropdown-item" href="seaweed.html">Seaweed Farming</a></li>
+                                        <li><a class="dropdown-item" href="butterflies.html">Butterflies Zoo</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="packages.html" class="nav-item nav-link">Packages</a>
+                        <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="#tour-booking" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
+                </div>
+            </nav>
+            </div>
+        <!-- Topbar End -->
+        
+        <!-- Carousel Start -->
+        <div class="carousel-header mb-3">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner" >
+                    <div class="carousel-item active">
+                        <img src="img/hotels.png" class="img-fluid" alt="Zanzibar Beach">
+                        <div class="carousel-caption">
+                            <div class="p-2" style="max-width: 900px;">
+                                <h1 class="display-2 text-capitalize text-white mb-4">Best Hotels in Zanzibar</h1>
+                            </div>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+      
+  <!-- paste here -->
+<!--Default Section-->
+<section class="container default-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+            
+            
+            <!--Column-->
+            <div>
+                <article class="inner-box padd-right-20">
+                    <h1 style="text-align: center;">Zanzibar Hotels</h1>
+                    <p align="center"><font size="3" color="#000000">
+                        When you come to zanzibar,your not going to get bored in your tour because of the best hotels that provide best and quality services for you to enjoy your tour very peaceful and happily. There are many Hotels in zanzibar that provide good hospitality that your going to enjoy. The services that are provided are like beach bar and restaurant, swimming pool, library, fitness center, superior rooms, presidential rooms and more.
+                    </p>
+                </article>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<section class="container default-section">
+    <div class="container"> <!-- Use Bootstrap container -->
+        <div class="row">
+
+            <!-- Text Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box" style="padding-right: 20px;">
+                    <h1>Hotel Riu <span class="normal-font">Jambo Zanzibar</span></h1>
+                    <p>
+                        The Hotel Riu Jambo is a 4-star all-inclusive resort located on Nungwi Beach in Zanzibar, Tanzania. It is the newest addition to the RIU Hotels & Resorts portfolio and opened its doors in June 2022. The hotel has a total of 300 rooms and suites, all of which are spacious and well-appointed.
+                    </p>
+                    <p>
+                        The Hotel Riu Jambo offers a wide range of amenities and activities for guests of all ages. The resort has four swimming pools, including one with a swim-up bar, a children's pool, and a lazy river. There is also a fitness center, a spa, a kids' club, and a teen club.
+                    </p>
+                    <p>
+                        Location: Nungwi Beach, Zanzibar, Tanzania<br>
+                        Dining options: Buffet restaurant, Italian restaurant, Asian restaurant, swim-up bar, 24-hour snack bar.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box">
+                    <figure class="image-box">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="img/hotel-riu-palace-zanzibar 2.jpg" class="img-fluid" alt="Hotel Riu Jambo Zanzibar">
+                                <img src="img/hotel-riu-palace-zanzibar.jpg" class="img-fluid mt-2" alt="Hotel Riu Jambo Zanzibar">
+                            </div>
+                        </div>
+                        <a href="https://www.riu.com/en/hotel/tanzania/zanzibar/hotel-riu-jambo/" target="_blank" 
+                            class="btn btn-warning mt-3" style="color: white; border-radius: 10px;">
+                            Visit Hotel Website
+                        </a>
+                    </figure>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<hr/>
+
+<!--Default Section-->
+<section class="container default-section">
+    <div class="container"> 
+        <div class="row">
+
+            <!-- Text Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box" style="padding-right: 20px;">
+                    <h1>Zuri Zanzibar <span class="normal-font">Hotel & Resort</span></h1>
+                    <p>
+                        Zuri Zanzibar is a 5-star beach resort located in Kendwa village, on the west-facing shores of Unguja, the main island of Zanzibar. The resort is just 50 km from Stone Town and its international airport. Zuri Zanzibar offers a stunning white-sand beach, turquoise waters, and unforgettable sunsets. The resort has a private 300-meter beach that is free of any tide-impact, allowing for safe swimming all day long.
+                    </p>
+                    <p>
+                        The resort's bungalows, suites, and villas are fitted with a mix of stylish contemporary furniture and local artisanal features and artwork. All rooms flow seamlessly out to generous terraces surrounded by lush tropical gardens.
+                    </p>
+                    <p>
+                        Zuri Zanzibar offers a fusion of European, African, Arabic, and Indian cuisine, creating a rainbow of sensational flavors and bringing the very best of Indian Ocean cuisine. Experience unforgettable dining in one of the resort's three restaurants and four bars.
+                    </p>
+                    <p>
+                        The resort also has a spa, fitness center, and a variety of activities and excursions to choose from, including swimming, sunbathing, snorkeling, diving, sailing, windsurfing, kayaking, and massages. <br><br>
+                        Zuri Zanzibar is the perfect place to relax and unwind in a beautiful and luxurious setting. The resort offers something for everyone, from couples to families to solo travelers.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box">
+                    <figure class="image-box">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="img/zuri zanzibar hotel.jpg" class="img-fluid" alt="Zuri Zanzibar Hotel">
+                                <img src="img/zuri_zanzibar_bedroom.jpg" class="img-fluid mt-2" alt="Zuri Zanzibar Bedroom">
+                            </div>
+                        </div>
+                        <a href="https://www.zurizanzibar.com" target="_blank" 
+                            class="btn btn-warning mt-3" style="color: white; border-radius: 10px;">
+                            Visit Hotel Website
+                        </a>
+                    </figure>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<hr/>
+
+<!--Default Section-->
+<section class="container default-section">
+    <div class="container">
+        <div class="row">
+
+            <!-- Text Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box" style="padding-right: 20px;">
+                    <h1>Gold Zanzibar <span class="normal-font">Beach House & Spa</span></h1>
+                    <p>
+                        Gold Zanzibar is a luxury beach resort located in Kendwa, Zanzibar, Tanzania. The resort is set on a secluded stretch of white-sand beach and offers stunning views of the Indian Ocean. Gold Zanzibar features rooms, suites, and villas, all of which are spacious and luxuriously appointed. The resort also has a variety of amenities, including a swimming pool, a spa, a fitness center, a dive center, and several restaurants and bars.
+                        <br><br>
+                        Gold Zanzibar is the perfect place to relax and unwind. The resort offers a variety of activities and amenities to keep guests entertained, including swimming, sunbathing, diving, snorkeling, and fishing. Gold Zanzibar also has a number of spa treatments available, perfect for a relaxing day of pampering.
+                        <br><br>
+                        In addition to its luxurious accommodations and amenities, Gold Zanzibar is also committed to sustainability. The resort uses solar power to generate electricity and has a number of water conservation initiatives in place. Gold Zanzibar is also a member of the Green Globe 21 sustainable tourism program.
+                        <br>
+                        Gold Zanzibar is the perfect place to experience the beauty and luxury of Zanzibar.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box">
+                    <figure class="image-box">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="img/gold-zanzibar-beach-house-and-spa-room-deluxe.jpeg" class="img-fluid" alt="Gold Zanzibar Room">
+                                <img src="img/Gold_Zanzibar_Beach_House_Spa.jpg" class="img-fluid mt-2" alt="Gold Zanzibar">
+                            </div>
+                        </div>
+                        <a href="https://www.goldzanzibar.com/" target="_blank" 
+                            class="btn btn-warning mt-3" style="color: white; border-radius: 10px;">
+                            Visit Hotel Website
+                        </a>
+                    </figure>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<hr/>
+
+<!--Default Section-->
+<section class="container default-section">
+    <div class="container">
+        <div class="row">
+
+            <!-- Text Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box" style="padding-right: 20px;">
+                    <h1>Neptune Pwani <span class="normal-font">Beach Resort & Spa</span></h1>
+                    <p>
+                        Neptune Pwani Beach Resort & Spa is a 5-star all-inclusive resort located in Kiwengwa, Zanzibar, Tanzania. The resort is situated on the north-east coast of Zanzibar, on the Kiwengwa shoreline, and approximately 45 km from the International Airport, next to Stone Town.
+                        <br><br>
+                        The resort features rooms all with a terrace and ocean view, situated in 2-level blocks and 4 individual beachfront suites with an in-room Jacuzzi. All air-conditioned rooms boast traditional Zanzibar décor and have a furnished balcony, a private bathroom with a shower, and a flat-screen TV. Free Wi-Fi is provided in all rooms and public areas.
+                        <br><br>
+                        The resort has 6 restaurants offering local cuisine, seafood, Indian, and Thai cuisine. There are also 3 bars. The Earth and Rain Spa features a sauna, steam bath, pool, and offers massage and beauty treatments.
+                        <br><br>
+                        The resort offers a variety of activities and amenities, including:
+                        <ul>
+                            <li>2 freshwater pools</li>
+                            <li>Tropical garden</li>
+                            <li>Sauna, steam bath, massage, and beauty treatments</li>
+                            <li>Diving, snorkeling, windsurfing, kitesurfing, catamaran sailing</li>
+                            <li>Stand-up paddleboarding, fishing, tennis, volleyball</li>
+                            <li>Kids club, playground, and table games</li>
+                            <li>24-hour front desk, car rental, airport shuttle</li>
+                        </ul>
+                        The resort is a popular destination for couples, families, and groups. It is a great place to relax and enjoy the beautiful beaches of Zanzibar.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box">
+                    <figure class="image-box">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="img/Neptune Pwani Beach Resort & Spa.jpg" class="img-fluid" alt="Neptune Pwani Beach">
+                                <img src="img/Neptune Pwani Beach Resort & Spa_room.jpg" class="img-fluid mt-2" alt="Neptune Pwani Room">
+                            </div>
+                        </div>
+                        <a href="https://www.neptunehotels.com/neptune-pwani-beach-resort-spa/" target="_blank" 
+                            class="btn btn-warning mt-3" style="color: white; border-radius: 10px;">
+                            Visit Hotel Website
+                        </a>
+                    </figure>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<hr/>
+
+<!--Default Section-->
+<section class="container default-section">
+    <div class="container">
+        <div class="row">
+
+            <!-- Text Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box" style="padding-right: 20px;">
+                    <h1>TUI BLUE <span class="normal-font">Bahari Zanzibar</span></h1>
+                    <p>
+                        TUI BLUE Bahari Zanzibar is a 5-star beachfront resort styled like an Arabian palace, located in Kiwengwa, Zanzibar, Tanzania. The resort is set on a white-sand beach and features two swimming pools, a spa, a fitness center, and a variety of restaurants and bars. Guests can also enjoy numerous activities, including water sports, tennis, and a kids' club.
+                        <br><br>
+                        The resort is a popular choice for couples and families alike. It offers various room types, including standard rooms, suites, and villas. All rooms are spacious and comfortable, with many featuring private balconies or terraces with ocean views.
+                        <br><br>
+                        The resort’s restaurants serve a mix of international and local cuisines. Several bars on-site provide a relaxed atmosphere for enjoying drinks and snacks. The spa offers a variety of treatments, such as massages, facials, and body wraps, while the well-equipped fitness center features state-of-the-art machines.
+                        <br><br>
+                        TUI BLUE Bahari Zanzibar is the perfect destination to relax and experience the beauty of Zanzibar. With its extensive amenities and friendly staff, guests are guaranteed a luxurious and memorable stay.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box">
+                    <figure class="image-box">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="img/tui-blue-bahari-zanzibar-deluxe-room-modern-style-bedroom.jpg" class="img-fluid" alt="TUI Blue Bahari Zanzibar Room">
+                                <img src="img/tui-blue-bahari-zanzibar-hotel-overview-2.jpg" class="img-fluid mt-2" alt="TUI Blue Bahari Zanzibar Hotel Overview">
+                            </div>
+                        </div>
+                        <a href="https://www.tui-blue.com/en/en/hotels/tui-blue-bahari-zanzibar/" target="_blank" 
+                            class="btn btn-warning mt-3" style="color: white; border-radius: 10px;">
+                            Visit Hotel Website
+                        </a>
+                    </figure>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<hr/>
+
+<!--Default Section-->
+<section class="container default-section">
+    <div class="container">
+        <div class="row">
+
+            <!-- Text Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box" style="padding-right: 20px;">
+                    <h1>Baraza <span class="normal-font">Resort and Spa</span></h1>
+                    <p>
+                        Baraza Resort and Spa Zanzibar is a luxury all-inclusive resort located on Bwejuu Beach in Zanzibar, Tanzania. The resort features 30 spacious villas, each with a private plunge pool and terrace. Designed in traditional Swahili style, the villas offer breathtaking views of the Indian Ocean.
+                        <br><br>
+                        Guests can enjoy top-notch amenities, including two swimming pools, a spa, a fitness center, a kids' club, and several fine dining restaurants and bars. A wide range of activities and excursions are available, such as snorkeling, diving, sailing, and kayaking.
+                        <br><br>
+                        Baraza Resort and Spa is the perfect destination to unwind and immerse yourself in the beauty of Zanzibar. With a combination of luxury, relaxation, and adventure, the resort ensures a memorable stay with excellent service and hospitality.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box">
+                    <figure class="image-box">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="img/Baraza-Dhahabu-Bar.jpg" class="img-fluid" alt="Baraza Dhahabu Bar">
+                                <img src="img/Baraza-Spa.jpg" class="img-fluid mt-2" alt="Baraza Spa">
+                            </div>
+                        </div>
+                        <a href="https://www.baraza-zanzibar.com/" target="_blank" 
+                            class="btn btn-warning mt-3" style="color: white; border-radius: 10px;">
+                            Visit Hotel Website
+                        </a>
+                    </figure>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<hr/>
+
+<!-- Park Hyatt Zanzibar Section -->
+<section class="container default-section">
+    <div class="container">
+        <div class="row">
+
+            <!-- Text Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box" style="padding-right: 20px;">
+                    <h1>Park Hyatt <span class="normal-font">Zanzibar</span></h1>
+                    <p>
+                        Park Hyatt Zanzibar is one of the most luxurious properties in Stone Town. Located on the seafront, just a short walk from the town center, it offers a peaceful retreat from the bustling alleyways.
+                        <br><br>
+                        The hotel's elegantly designed rooms and suites feature modern amenities, including air conditioning, minibars, and flat-screen TVs. Many rooms also come with private balconies or terraces offering breathtaking views of the Indian Ocean.
+                        <br><br>
+                        Guests can unwind at the hotel's spa, which offers a range of treatments, including massages, facials, and body wraps. The property also features a well-equipped fitness center, a swimming pool, a kids' club, and diverse dining options serving both international and local cuisine.
+                        <br><br>
+                        Park Hyatt Zanzibar is also ideal for business travelers, offering professional business services such as laptop rentals. The hotel maintains the highest standards of an international luxury property.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box">
+                    <figure class="image-box">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="img/Park-Hyatt-Zanzibar-Garden.webp" class="img-fluid" alt="Park Hyatt Zanzibar Garden">
+                                <img src="img/Park-Hyatt-Zanzibar-Royal-Residence-Bedroom.webp" class="img-fluid mt-2" alt="Park Hyatt Zanzibar Royal Residence">
+                            </div>
+                        </div>
+                        <a href="https://www.hyatt.com/en-US/hotel/tanzania/park-hyatt-zanzibar/znzph" target="_blank" 
+                            class="btn btn-warning mt-3" style="color: white; border-radius: 10px;">
+                            Visit Hotel Website
+                        </a>
+                    </figure>
+                </article>
+            </div>
+
+        </div> <!-- Closing Row -->
+    </div> <!-- Closing Container -->
+</section> <!-- Closing Section -->
+
+
+<hr/>
+
+<!-- Emerald Zanzibar Section -->
+<section class="container default-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+
+            <!-- Text Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box" style="padding-right: 20px;">
+                    <h1>Emerald Zanzibar <span class="normal-font">Resort & Spa</span></h1>
+                    <p>
+                        Emerald Zanzibar is a 5-star resort located in Matemwe, Zanzibar, Tanzania. Opened in 2019 and owned by Emerald Resorts, this luxurious retreat offers a serene escape blending the exotic natural environment with modern elegance.
+                        <br><br>
+                        Emerald Zanzibar is a popular destination for both business and leisure travelers. The resort is conveniently located near Matemwe's attractions, including the Mnemba Atoll, the Mnemba Marine Reserve, and the Matemwe Spice Farm. The resort offers various amenities and services designed to ensure a comfortable and enjoyable stay.
+                        <br><br>
+                        The luxury suites combine African style with modern comforts. The Emerald Spa offers world-class treatments from Thai and Balinese cultures, making it the perfect place for relaxation and rejuvenation.
+                        <br><br>
+                        With its spacious and comfortable rooms, friendly staff, and beautiful location, Emerald Zanzibar is an excellent choice for those seeking a luxurious and relaxing stay in Matemwe.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box">
+                    <figure class="image-box">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="img/Emerald Resort Zanzibar.jpg" class="img-fluid" alt="Emerald Zanzibar Resort">
+                                <img src="img/Emerald-zanzibar-bedroom.jpg" class="img-fluid mt-2" alt="Emerald Zanzibar Bedroom">
+                            </div>
+                        </div>
+                        <a href="https://www.emerald-zanzibar.com/" target="_blank" class="btn btn-warning mt-3" style="color: white; border-radius: 10px;">
+                            Visit Hotel Website
+                        </a>
+                    </figure>
+                </article>
+            </div>
+
+        </div> <!-- Closing Row -->
+    </div> <!-- Closing Auto-Container -->
+</section> <!-- Closing Section -->
+
+
+<hr/>
+
+<!-- Tulia Zanzibar Section -->
+<section class="container default-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+
+            <!-- Text Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box" style="padding-right: 20px;">
+                    <h1>Tulia Zanzibar <span class="normal-font">Beach Resort</span></h1>
+                    <p>
+                        Tulia Zanzibar is a luxury boutique hotel located on the east coast of Zanzibar, Tanzania, offering breathtaking views of the Indian Ocean.
+                        <br><br>
+                        The hotel features 16 spacious villas, each with a private terrace or balcony overlooking the ocean. The villas are elegantly decorated in a modern style and come with air conditioning, Wi-Fi, and flat-screen TVs.
+                        <br><br>
+                        Guests can enjoy a variety of amenities, including a swimming pool, spa, fitness center, and a selection of restaurants and bars. For those seeking adventure, the hotel offers activities like snorkeling, diving, and sailing.
+                        <br><br>
+                        In response to the lack of beach space at high tide, Tulia has created a small artificial beach below the pool area, with loungers and parasols. However, this space may not accommodate all guests when the hotel is full.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box">
+                    <figure class="image-box">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="img/Tulia bedroom garden bungalow.jpg" class="img-fluid" alt="Tulia Zanzibar Garden Bungalow">
+                                <img src="img/Tulia zanzibar.jpg" class="img-fluid mt-2" alt="Tulia Zanzibar Resort">
+                            </div>
+                        </div>
+                        <a href="https://tuliazanzibar.com/" target="_blank" 
+                            class="btn btn-warning mt-3" style="color: white; border-radius: 10px;">
+                            Visit Hotel Website
+                        </a>
+                    </figure>
+                </article>
+            </div>
+
+        </div> <!-- Closing Row -->
+    </div> <!-- Closing Auto-Container -->
+</section> <!-- Closing Section -->
+
+
+
+<hr/>
+
+<!--Default Section-->
+<section class="container default-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+
+            <!-- Text Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box" style="padding-right: 20px;">
+                    <h1>White Paradise <span class="normal-font">Zanzibar</span></h1>
+                    <p>
+                        White Paradise Zanzibar is a boutique resort located on the east coast of Zanzibar, Tanzania, set on a private beach with stunning views of the Indian Ocean. It is the perfect place to relax and unwind, offering beautiful gardens, an infinity pool, and delicious food.
+                        <br><br>
+                        Conveniently located in the Pongwe area, this 4-star property provides easy access to local attractions and dining options. White Paradise Zanzibar offers a variety of accommodation options, from standard rooms to villas with private pools.
+                        <br><br>
+                        The resort features a wide range of amenities, including yoga classes, massages, and boat trips. The friendly and welcoming staff is always ready to help guests make the most of their stay.
+                        <br><br>
+                        Whether you're visiting as a couple, with family, or with friends, White Paradise Zanzibar offers something for everyone – from stunning views and delicious food to a variety of activities. It's the ideal place to relax and enjoy a peaceful vacation.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box">
+                    <figure class="image-box">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="img/white-paradise-hotel.jpg" class="img-fluid" alt="White Paradise Hotel">
+                                <img src="img/White Paradise zanzibar.jpg" class="img-fluid mt-2" alt="White Paradise Zanzibar Resort">
+                            </div>
+                        </div>
+                        <a href="about:blank" target="_blank" class="btn btn-warning mt-3" style="color: white; border-radius: 10px;">
+                            Visit Hotel Website
+                        </a>
+                    </figure>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<hr/>
+
+<!--Default Section-->
+<section class="container default-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+
+            <!-- Text Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box" style="padding-right: 20px;">
+                    <h1>Zanzibar Serena <span class="normal-font">Hotel</span></h1>
+                    <p>
+                        Zanzibar Serena Hotel is a 5-star hotel located in Stone Town, Zanzibar, Tanzania. Opened in 1997, it is owned and operated by Serena Hotels, a renowned Tanzanian hotel chain.
+                        <br><br>
+                        The hotel offers 5-star accommodation with stunning views of the Indian Ocean, an outdoor pool with sun loungers, a café, and two restaurants. Zanzibar Serena Hotel also provides free private parking.
+                        <br><br>
+                        All rooms are beautifully decorated with traditional furnishings and include amenities such as satellite TV, a minibar, a tea and coffee maker, and a private bathroom with a bath, shower, and free toiletries. The hotel also offers 24-hour room service and free Wi-Fi, as well as a fitness center and a spa.
+                        <br><br>
+                        Zanzibar Serena Hotel is a popular choice for both business and leisure travelers. Its prime location in Stone Town allows easy access to many attractions, including the House of Wonders, the Sultan's Palace, and the Old Fort. The hotel offers a wide range of services and amenities to ensure a comfortable and enjoyable stay for all guests.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box">
+                    <figure class="image-box">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="img/zanzibar serena hotel_dining.jpg" class="img-fluid" alt="Zanzibar Serena Hotel Dining">
+                                <img src="img/zanzibar serena hotel_room.jpg" class="img-fluid mt-2" alt="Zanzibar Serena Hotel Room">
+                            </div>
+                        </div>
+                        <a href="https://www.serenahotels.com/zanzibar" target="_blank" class="btn btn-warning mt-3" style="color: white; border-radius: 10px;">
+                            Visit Hotel Website
+                        </a>
+                    </figure>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<hr/>
+
+<!--Default Section-->
+<section class="container default-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+
+            <!-- Text Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box" style="padding-right: 20px;">
+                    <h1>Z Hotel <span class="normal-font">Zanzibar</span></h1>
+                    <p>
+                        Z Hotel is the original boutique hotel on Zanzibar, opening in 2010. It brings casual relaxation blended with contemporary London-inspired design to the beaches of Zanzibar, offering the 21st-century traveler a fresh and original beach holiday experience.
+                        <br><br>
+                        The Z Hotel is a contemporary property with a relaxed atmosphere. It offers rooms and suites, all decorated in a modern style, and features an infinity pool, a spa, and a restaurant.
+                        <br><br>
+                        Located close to many of Nungwi's attractions, including Nungwi Beach, the Nungwi Lighthouse, and the Nungwi Market, the hotel is popular with both business and leisure travelers. The hotel also offers a variety of amenities and services designed to ensure that guests have a comfortable and enjoyable stay.
+                        <br><br>
+                        The Z Hotel is a great choice for travelers looking for a stylish and relaxing stay in Nungwi. The hotel provides a range of amenities and services to make every guest's stay as comfortable and enjoyable as possible.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box">
+                    <figure class="image-box">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="img/The-Z-Hotel-Zanzibar-in-Nungwi,-boutique-on-the-beach-2.jpg" class="img-fluid" alt="Z Hotel Zanzibar Beach">
+                                <img src="img/The Zhotel-zanzibar-bedroom.jpg" class="img-fluid mt-2" alt="Z Hotel Zanzibar Bedroom">
+                            </div>
+                        </div>
+                        <a href="https://www.thezhotel.com/" target="_blank" class="btn btn-warning mt-3" style="color: white; border-radius: 10px;">
+                            Visit Hotel Website
+                        </a>
+                    </figure>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<hr/>
+
+<!--Default Section-->
+<section class="container default-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+
+            <!-- Text Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box" style="padding-right: 20px;">
+                    <h1>Emerald Zanzibar <span class="normal-font">Resort & Spa</span></h1>
+                    <p>
+                        Emerald Zanzibar is a 5-star resort located in Matemwe, Zanzibar, Tanzania. Opened in 2019 and owned by Emerald Resorts, this luxurious retreat offers a serene escape blending the exotic natural environment with modern elegance.
+                        <br><br>
+                        Emerald Zanzibar is a popular destination for both business and leisure travelers. The resort is conveniently located near Matemwe's attractions, including the Mnemba Atoll, the Mnemba Marine Reserve, and the Matemwe Spice Farm. The resort offers various amenities and services designed to ensure a comfortable and enjoyable stay.
+                        <br><br>
+                        The luxury suites combine African style with modern comforts. The Emerald Spa offers world-class treatments from Thai and Balinese cultures, making it the perfect place for relaxation and rejuvenation.
+                        <br><br>
+                        With its spacious and comfortable rooms, friendly staff, and beautiful location, Emerald Zanzibar is an excellent choice for those seeking a luxurious and relaxing stay in Matemwe.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-md-6 col-sm-12">
+                <article class="inner-box">
+                    <figure class="image-box">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                                <img src="img/Emerald Resort Zanzibar.jpg" class="img-fluid" alt="Emerald Zanzibar Resort">
+                                <img src="img/Emerald-zanzibar-bedroom.jpg" class="img-fluid mt-2" alt="Emerald Zanzibar Bedroom">
+                            </div>
+                        </div>
+                        <a href="https://www.emerald-zanzibar.com/" target="_blank" class="btn btn-warning mt-3" style="color: white; border-radius: 10px;">
+                            Visit Hotel Website
+                        </a>
+                    </figure>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+       <!-- Footer Start -->
+<div class="container-fluid footer py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-6 col-xl-5">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white" id="footer-get-in-touch">Get In Touch</h4>
+                    <p><i class="fas fa-home me-2"></i><span id="footer-address">Zanzibar, Tanzania</span></p>
+                    <p><i class="fas fa-envelope me-2"></i><span id="footer-email"><a href="mailto:reservation@chaguaadventure.com">reservation@chaguaadventure.com</a></span></p>
+                    <p><i class="fas fa-envelope me-2"></i><a href="mailto:info@chaguaadventure.com" id="footer-email">info@chaguaadventure.com</a></p>
+                    <p><i class="fab fa-whatsapp me-2"></i><a href="https://wa.me/254796302036" target="_blank">+254 796 302 036</a></p>
+                    <p><i class="fab fa-whatsapp me-2"></i><a href="https://wa.me/255772656264" target="_blank">+255 772 656 264</a></p>
+                    <div class="d-flex align-items-center">
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/chagua.adventure/" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white" id="footer-company-title">Day Tours</h4>
+                    <a href="cityTour.html"><span id="footer-about">City Tour</span></a>
+                    <a href="swahiliTour.html"><span id="footer-careers">Swahili Cultural Tour</span></a>
+                    <a href="jozani.html"><span id="footer-blog">Jozani Forest</span></a>
+                    <a href="spice.html"><span id="footer-press">Spice Tour</span></a>
+                    <a href="prison.html"><span id="footer-gift-cards">Prison Islan</span></a>
+                    <a href="safeBlue.html"><span id="footer-magazine">Safari Blue</span></a>
+                    <a href="kizimkazi.html"><span id="footer-magazine">Kizimkazi Dolphines</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white" id="footer-support-title">Wild Safaris</h4>
+                    <a href="gombe.html"><span id="footer-contact">Gombe National Park</span></a>
+                    <a href="mikumi.html"><span id="footer-legal-notice">Mikumi National Park</span></a>
+                    <a href="ruaha.html"><span id="footer-privacy-policy">Ruaha National Park</span></a>
+                    <a href="selous.html"><span id="footer-terms">Selous Game Reserve</span></a>
+                    <a href="arusha.html"><span id="footer-sitemap">Arusha National Park</span></a>
+                    <a href="tarangire.html"><span id="footer-cookie-policy">Tarangire National Park</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+        
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Get the current page file name (e.g., index.html, about.html, etc.)
+                let currentPage = window.location.pathname.split("/").pop();
+                
+                // If no file name is found (e.g., if accessing the root directory), default to index.html
+                if (currentPage === "" || currentPage === "index.html") {
+                    currentPage = "index.html";
+                }
+        
+                // Get all navigation links
+                let navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        
+                // Loop through each link to check and apply the 'active' class
+                navLinks.forEach(link => {
+                    let linkPage = link.getAttribute("href");
+                    if (linkPage === currentPage) {
+                        link.classList.add("active");
+                    } else {
+                        link.classList.remove("active");
+                    }
+                });
+            });
+        </script>
+        
+    </body>
+
+</html>

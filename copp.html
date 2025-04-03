@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>chagua adventures</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/citytour.css" rel="stylesheet">
+    <style>
+        /* Hide the dropdown menu by default */
+.dropdown-submenu .dropdown-menu {
+    display: none;
+}
+
+/* Show the dropdown menu when hovering over the parent <li> */
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
+/* Optional: You can add styles for better appearance */
+.dropdown-submenu .dropdown-menu {
+    position: absolute;
+    top: 60%;
+    left: 50%;  /* To make the submenu appear to the right of the main menu */
+    top: 0;
+    z-index: 10000;  /* Ensure the submenu is above other elements */
+}
+
+@media (max-width: 992px) {  /* Adjust for tablets and smaller */
+    .dropdown-submenu .dropdown-menu {
+        position: static;   /* Makes it appear below the parent */
+        width: 100%;        /* Full width for better usability */
+        display: none;
+    }
+    .dropdown-submenu:hover .dropdown-menu {
+        display: block;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar & Hero Start -->
+<div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="" class="navbar-brand p-0">
+            <h1 class="m-0">
+                <img src="img/logo.png" alt="See Zanzibar Logo" style="max-height: 50px; margin-right: 10px;">
+                Chagua Adventure
+            </h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="services.html" class="nav-item nav-link">Services</a>
+                        <a href="hotel.html" class="nav-item nav-link">Hotels</a>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Safaris & Tours
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="tanzania.html">Tanzania Day Trips</a></li>
+                                <!-- <li><a class="dropdown-item" href="#">Safari Programs Out of Zanzibar</a></li> -->
+                                <li><a class="dropdown-item" href="luxury-african-safaris.html">Luxury African Safaris</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Zanzibar Day Trips</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="cityTour.html">City Tour</a></li>
+                                        <li><a class="dropdown-item" href="swahiliTour.html">Swahili Cultural Tour</a></li>
+                                        <li><a class="dropdown-item" href="jozani.html">Jozani Forest</a></li>
+                                        <li><a class="dropdown-item" href="spice.html">Spice Tour</a></li>
+                                        <li><a class="dropdown-item" href="prison.html">Prison Island</a></li>
+                                        <li><a class="dropdown-item" href="kizimkazi.html">Kizimkazi Dolphin Tour</a></li>
+                                        <li><a class="dropdown-item" href="gameFishing.html">Game Fishing</a></li>
+                                        <li><a class="dropdown-item" href="slavecave.html">Slave Cave</a></li>
+                                        <li><a class="dropdown-item" href="seaweed.html">Seaweed Farming</a></li>
+                                        <li><a class="dropdown-item" href="butterflies.html">Butterflies Zoo</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="packages.html" class="nav-item nav-link">Packages</a>
+                        <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="#tour-booking" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
+                </div>
+            </nav>
+            </div>
+        <!-- Topbar End -->
+        
+        <!-- Carousel Start -->
+        <div class="carousel-header mb-3">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner" >
+                    <div class="carousel-item active">
+                        <img src="img/swahiliCulture.png" class="img-fluid" alt="Zanzibar Beach">
+                        <div class="carousel-caption">
+                            <div class="p-2" style="max-width: 900px;">
+                                <h1 class="display-2 text-capitalize text-white mb-4">Swahili CUltural Tour</h1>
+                            </div>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+      
+  <!-- paste here -->
+
+
+      <!-- Footer Start -->
+<div class="container-fluid footer py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-6 col-xl-5">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white" id="footer-get-in-touch">Get In Touch</h4>
+                    <p><i class="fas fa-home me-2"></i><span id="footer-address">Zanzibar, Tanzania</span></p>
+                    <p><i class="fas fa-envelope me-2"></i><span id="footer-email"><a href="mailto:reservation@chaguaadventure.com">reservation@chaguaadventure.com</a></span></p>
+                    <p><i class="fas fa-envelope me-2"></i><a href="mailto:info@chaguaadventure.com" id="footer-email">info@chaguaadventure.com</a></p>
+                    <p><i class="fab fa-whatsapp me-2"></i><a href="https://wa.me/254796302036" target="_blank">+254 796 302 036</a></p>
+                    <p><i class="fab fa-whatsapp me-2"></i><a href="https://wa.me/255772656264" target="_blank">+255 772 656 264</a></p>
+                    <div class="d-flex align-items-center">
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/chagua.adventure/" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white" id="footer-company-title">Day Tours</h4>
+                    <a href="cityTour.html"><span id="footer-about">City Tour</span></a>
+                    <a href="swahiliTour.html"><span id="footer-careers">Swahili Cultural Tour</span></a>
+                    <a href="jozani.html"><span id="footer-blog">Jozani Forest</span></a>
+                    <a href="spice.html"><span id="footer-press">Spice Tour</span></a>
+                    <a href="prison.html"><span id="footer-gift-cards">Prison Islan</span></a>
+                    <a href="safeBlue.html"><span id="footer-magazine">Safari Blue</span></a>
+                    <a href="kizimkazi.html"><span id="footer-magazine">Kizimkazi Dolphines</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white" id="footer-support-title">Wild Safaris</h4>
+                    <a href="gombe.html"><span id="footer-contact">Gombe National Park</span></a>
+                    <a href="mikumi.html"><span id="footer-legal-notice">Mikumi National Park</span></a>
+                    <a href="ruaha.html"><span id="footer-privacy-policy">Ruaha National Park</span></a>
+                    <a href="selous.html"><span id="footer-terms">Selous Game Reserve</span></a>
+                    <a href="arusha.html"><span id="footer-sitemap">Arusha National Park</span></a>
+                    <a href="tarangire.html"><span id="footer-cookie-policy">Tarangire National Park</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+        
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Get the current page file name (e.g., index.html, about.html, etc.)
+                let currentPage = window.location.pathname.split("/").pop();
+                
+                // If no file name is found (e.g., if accessing the root directory), default to index.html
+                if (currentPage === "" || currentPage === "index.html") {
+                    currentPage = "index.html";
+                }
+        
+                // Get all navigation links
+                let navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        
+                // Loop through each link to check and apply the 'active' class
+                navLinks.forEach(link => {
+                    let linkPage = link.getAttribute("href");
+                    if (linkPage === currentPage) {
+                        link.classList.add("active");
+                    } else {
+                        link.classList.remove("active");
+                    }
+                });
+            });
+        </script>
+        
+    </body>
+
+</html>

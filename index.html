@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>chagua adventures</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+    
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            /* Hide the dropdown menu by default */
+    .dropdown-submenu .dropdown-menu {
+        display: none;
+    }
+    
+    /* Show the dropdown menu when hovering over the parent <li> */
+    .dropdown-submenu:hover .dropdown-menu {
+        display: block;
+    }
+    
+    /* Optional: You can add styles for better appearance */
+    .dropdown-submenu .dropdown-menu {
+        position: absolute;
+        top: 60%;
+        left: 50%;  /* To make the submenu appear to the right of the main menu */
+        top: 0;
+        z-index: 10000;  /* Ensure the submenu is above other elements */
+    }
+    
+    @media (max-width: 992px) {  /* Adjust for tablets and smaller */
+        .dropdown-submenu .dropdown-menu {
+            position: static;   /* Makes it appear below the parent */
+            width: 100%;        /* Full width for better usability */
+            display: none;
+        }
+        .dropdown-submenu:hover .dropdown-menu {
+            display: block;
+        }
+    }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+         <!-- Navbar & Hero Start -->
+<div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="" class="navbar-brand p-0">
+            <h1 class="m-0">
+                <img src="img/logo.png" alt="See Zanzibar Logo" style="max-height: 50px; margin-right: 10px;">
+                Chagua Adventure
+            </h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="services.html" class="nav-item nav-link">Services</a>
+                        <a href="hotel.html" class="nav-item nav-link">Hotels</a>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Safaris & Tours
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="tanzania.html">Tanzania Day Trips</a></li>
+                                <!-- <li><a class="dropdown-item" href="#">Safari Programs Out of Zanzibar</a></li> -->
+                                <li><a class="dropdown-item" href="luxury-african-safaris.html">Luxury African Safaris</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Zanzibar Day Trips</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="cityTour.html">City Tour</a></li>
+                                        <li><a class="dropdown-item" href="swahiliTour.html">Swahili Cultural Tour</a></li>
+                                        <li><a class="dropdown-item" href="jozani.html">Jozani Forest</a></li>
+                                        <li><a class="dropdown-item" href="spice.html">Spice Tour</a></li>
+                                        <li><a class="dropdown-item" href="prison.html">Prison Island</a></li>
+                                        <li><a class="dropdown-item" href="kizimkazi.html">Kizimkazi Dolphin Tour</a></li>
+                                        <li><a class="dropdown-item" href="gameFishing.html">Game Fishing</a></li>
+                                        <li><a class="dropdown-item" href="slavecave.html">Slave Cave</a></li>
+                                        <li><a class="dropdown-item" href="seaweed.html">Seaweed Farming</a></li>
+                                        <li><a class="dropdown-item" href="butterflies.html">Butterflies Zoo</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="packages.html" class="nav-item nav-link">Packages</a>
+                        <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="#tour-booking" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
+                </div>
+            </nav>
+            </div>
+        <!-- Topbar End -->
+
+
+
+
+        
+            <!-- Carousel Start -->
+<div class="carousel-header">
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="img/carousel-1.jpg" class="img-fluid" alt="Zanzibar Beach">
+                <div class="carousel-caption">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explore Zanzibar's Serenity</h4>
+                        <h1 class="display-2 text-capitalize text-white mb-4">Your Dream Beach Escape</h1>
+                        <p class="mb-5 fs-5">Relax on pristine beaches, dive into turquoise waters, and discover the vibrant culture of Zanzibar with our guided tours.</p>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5" href="#tour-booking">Plan Your Trip</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel-2.jpg" class="img-fluid" alt="Cultural Heritage">
+                <div class="carousel-caption">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Discover Rich Heritage</h4>
+                        <h1 class="display-2 text-capitalize text-white mb-4">Tanzania Awaits</h1>
+                        <p class="mb-5 fs-5">Immerse yourself in the fascinating history, vibrant traditions, and breathtaking landscapes of Tanzania.</p>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5" href="#tour-booking">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="data:image/jpeg;base64,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" class="img-fluid" alt="Cultural Heritage">
+                <div class="carousel-caption">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">DISCOVER THE FLAVORS OF ZANZIBAR</h4>
+                        <h1 class="display-2 text-capitalize text-white mb-4">Aromatic Spice Journey</h1>
+                        <p class="mb-5 fs-5">Immerse yourself in the rich scents and vibrant flavors of Zanzibar’s world-famous spices. From cloves to cinnamon, experience the essence of the Spice Islands.</p>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5" href="#tour-booking">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/Stone-town-Shopping-Zanzibar.png" class="img-fluid" alt="Stone Town Market">
+                <div class="carousel-caption">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">EXPERIENCE THE VIBRANT MARKETS OF ZANZIBAR</h4>
+                        <h1 class="display-2 text-capitalize text-white mb-4">Stone Town's Bustling Bazaars</h1>
+                        <p class="mb-5 fs-5">Wander through the lively streets of Stone Town, where the scents of fresh spices blend with the colors of exotic fruits and handcrafted treasures.</p>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5" href="#market-tour">Explore More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon btn bg-primary" aria-hidden="false"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon btn bg-primary" aria-hidden="false"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<!-- Carousel End -->
+
+
+        
+        <!-- Navbar & Hero End -->
+
+        <!-- About Start -->
+        <div class="container-fluid about py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="h-100" style="border: 50px solid; border-color: transparent #13357B transparent #13357B;">
+                            <img src="img/about-img.jpg" class="img-fluid w-100 h-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-7" style="background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(img/about-img-1.png);">
+                        <h5 class="section-about-title pe-3">About Us</h5>
+                        <h1 class="mb-4">Welcome to <span class="text-primary">Chagua Adventures Tours</span></h1>
+                        <p class="mb-4">Chagua Adventures Tours, a comprehensive resource for researching, planning and booking your holiday in Tanzania, especially Zanzibar. We have great pleasure in introducing our company to you in connection with specialized excursions and hotels reservation in Zanzibar and Tanzania.</p>
+                        <p class="mb-4"> </p>
+                        
+                        <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+
+
+
+        
+
+        <!-- Explore Tour Start -->
+<div class="container-fluid ExploreTour py-5">
+    <div class="container py-5">
+        <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+            <h5 class="section-title px-3">Explore Tours</h5>
+            <h1 class="mb-4">Zanzibar & Mainland Tanzania.</h1>
+            <p class="mb-0">Zanzibar is an amazing home for beach tours and holidays in the whole of East Africa. It is marvellous to vacate on some of the best Africa’s beaches on the famous Zanzibar Archipelago. The ambience at these calm white sand palm beaches smells only of peace and tranquillity. Most interesting is that the various beach hotels and lodges are internationally standardised.</p>
+        </div>
+        <div class="tab-class text-center">
+            <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+                <li class="nav-item">
+                    <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#NationalTab-1">
+                        <span class="text-dark" style="width: 250px;">Tour Categories</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="NationalTab-1" class="tab-pane fade show p-0 active">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4 item">
+                            <div class="national-item no-hover">
+                                <img src="img/explore-tour-4.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                <div class="national-content">
+                                    <div class="national-info">
+                                        <h5 class="text-white text-uppercase mb-2">Helicopter Safaris</h5>
+                                        <a href="#" class="btn-hover text-white">View All Places <i class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 item">
+                            <div class="national-item no-hover">
+                                <img src="img/explore-tour-2.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                <div class="national-content">
+                                    <div class="national-info">
+                                        <h5 class="text-white text-uppercase mb-2">Safari</h5>
+                                        <a href="#" class="btn-hover text-white">View All Places <i class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 item">
+                            <div class="national-item no-hover">
+                                <img src="img/explore-tour-3.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                <div class="national-content">
+                                    <div class="national-info">
+                                        <h5 class="text-white text-uppercase mb-2">Cultural Experience</h5>
+                                        <a href="#" class="btn-hover text-white">View All Places <i class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4 item">
+                            <div class="national-item no-hover">
+                                <img src="img/explore-tour-5.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                <div class="national-content">
+                                    <div class="national-info">
+                                        <h5 class="text-white text-uppercase mb-2">Family Getaway</h5>
+                                        <a href="#" class="btn-hover text-white">View All Places <i class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 item">
+                            <div class="national-item no-hover">
+                                <img src="img/explore-tour-6.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                <div class="national-content">
+                                    <div class="national-info">
+                                        <h5 class="text-white text-uppercase mb-2"></h5>
+                                        <a href="#" class="btn-hover text-white">View All Places <i class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 item">
+                            <div class="national-item no-hover">
+                                <img src="img/explore-tour-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                <div class="national-content">
+                                    <div class="national-info">
+                                        <h5 class="text-white text-uppercase mb-2">Beach Getaway</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Explore Tour End -->
+
+<style>
+    .no-hover:hover {
+        transform: none !important;
+        background-color: inherit !important;
+    }
+</style>
+
+
+        <!-- Packages Start -->
+<div class="container-fluid packages py-5">
+    <div class="container py-5">
+        <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+            <h5 class="section-title px-3">Tours</h5>
+            <h1 class="mb-0">Zanzibar & Mainland Tanzania Tours.</h1>
+            <p class="mb-0">Arrive at Zanzibar airport
+                This package contains the Prison Island Boat trip, stone town city tour, safari blue boat trip, spice tour and the Jozani Forest tour.</p>
+        </div>
+        <!-- Removed the owl-carousel class and added a grid layout for the packages -->
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img//packagesarusha.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Arusha National Park</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tour</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Arusha National Park</h5>
+                            <small class="text-uppercase">Tour</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">Lying between the peaks of Kilimanjaro and Meru, Arusha National Park is an area of outstanding beauty. The Park has a wide range of habitats, the  summit of Mt. Meru </p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img/packageskilikili.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>  Kilimanjaro day Tour</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tour</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Kilimanjaro day Tour</h5>
+                            <small class="text-uppercase">Tour</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4"> one day trek to the first camp from the Entrance Gate or Staring point with your Trekking Guide. We recommend starting at Marangu Gate as there</p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img//packagesjoz.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Jozani Forest</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tours</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Jozani Forest</h5>
+                            <small class="text-uppercase">Tours</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">Discover the beauty of Jozani Forest, home to the famous red colobus monkeys, lush green vegetation, and tranquil walking paths surrounded by nature.</p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="packages-item">
+                    <div class="packages-img">
+                        <img src="img/packagesmnemb.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute" style="width: 100%; bottom: 0; left: 0; z-index: 5;">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt me-2"></i>Mnemba Tour</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt me-2"></i>Tour</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user me-2"></i>Person</small>
+                        </div>
+                        
+                    </div>
+                    <div class="packages-content bg-light">
+                        <div class="p-4 pb-0">
+                            <h5 class="mb-0">Mnemba Tour</h5>
+                            <small class="text-uppercase">Tour</small>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p class="mb-4">Embark on a boat ride to Mnemba Island, where you can snorkel in clear waters and witness vibrant coral reefs and abundant marine life.</p>
+                        </div>
+                        <div class="row bg-primary rounded-bottom mx-0">
+                            <div class="col-6 text-start px-0">
+                            </div>
+                            <div class="col-6 text-end px-0">
+                                <a href="#tour-booking" class="btn-hover btn text-white py-2 px-4">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Packages End -->
+
+
+
+        <!-- Tour Booking Start -->
+<div class="container-fluid booking py-5" id="tour-booking">
+    <div class="container-fluid booking py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h5 class="section-booking-title pe-3">Booking</h5>
+                    <h1 class="text-white mb-4">Online Booking</h1>
+                    <p class="text-white mb-4">Plan your dream tour with us! Fill out the form, and we’ll get back to you with the best options for your adventure.</p>
+                    <p class="text-white mb-4">Book now and let us handle all the details for your unforgettable trip.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="text-white mb-3">Book A Tour Deal</h1>
+                    <p class="text-white mb-4">Let's<span class="text-warning"> Make </span>your journey extraodinary!</p>
+                    <form action="https://formspree.io/f/xovekeyw" method="POST">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control bg-white border-0" name="name" placeholder="Your Name" required>
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control bg-white border-0" name="email" placeholder="Your Email" required>
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating date">
+                                    <input type="text" class="form-control bg-white border-0" name="datetime" placeholder="Date & Time" required>
+                                    <label for="datetime">Date & Time</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-select bg-white border-0" name="destination" required>
+                                        <option value="Stone Town, Zanzibar">Stone Town, Zanzibar</option>
+                                        <option value="Nungwi Beach, Zanzibar">Nungwi Beach, Zanzibar</option>
+                                        <option value="Jozani Forest, Zanzibar">Jozani Forest, Zanzibar</option>
+                                        <option value="Serengeti National Park, Tanzania">Serengeti National Park, Tanzania</option>
+                                        <option value="Mount Kilimanjaro, Tanzania">Mount Kilimanjaro, Tanzania</option>
+                                        <option value="Ngorongoro Crater, Tanzania">Ngorongoro Crater, Tanzania</option>
+                                        <option value="Mnemba Island, Zanzibar">Mnemba Island, Zanzibar</option>
+                                        <option value="Prison Island, Zanzibar">Prison Island, Zanzibar</option>
+                                        <option value="Selous Game Reserve, Tanzania">Selous Game Reserve, Tanzania</option>
+                                        <option value="Paje Beach, Zanzibar">Paje Beach, Zanzibar</option>
+                                        <option value="Kuza Cave">Kuza Cave</option>
+                                        <option value="Dolphin Tour">Dolphin Tour</option>
+                                        <option value="Jozani">Jozani</option>
+                                        <option value="Mikumi">Mikumi</option>
+                                        <option value="Mnemba Tour">Mnemba Tour</option>
+                                        <option value="Mountain Kilimanjaro">Mountain Kilimanjaro</option>
+                                        <option value="Nakupenda Picnic">Nakupenda Picnic</option>
+                                        <option value="Nyundo Sandback">Nyundo Sandback</option>
+                                        <option value="Safari Tour">Safari Tour</option>
+                                        <option value="Spice Farm">Spice Farm</option>
+                                        <option value="Squad Adventure">Squad Adventure</option>
+                                        <option value="Sunset Tour">Sunset Tour</option>
+                                        <option value="Village Tour">Village Tour</option>
+                                        <option value="Mnemba Snorkeling & Dolphin">Mnemba Snorkeling & Dolphin</option>
+                                        <option value="Tumbatu with Starfish Island">Tumbatu with Starfish Island</option>
+                                        <option value="Sunset Cruise - $40 Dhow">Sunset Cruise - $40 Dhow</option>
+                                        <option value="Catamaran Day Charter in Zanzibar">Catamaran Day Charter in Zanzibar</option>
+                                        <option value="Catamaran Day/Night Charter in Zanzibar">Catamaran Day/Night Charter in Zanzibar</option>
+                                        <option value="Deep Sea Fishing in Zanzibar">Deep Sea Fishing in Zanzibar</option>
+                                        <option value="Nakupenda & Prison Island Tour">Nakupenda & Prison Island Tour</option>
+                                        <option value="Nungwi Sandbank">Nungwi Sandbank</option>
+                                        <option value="Turtle Aquarium - Couple">Turtle Aquarium - Couple</option>
+                                        <option value="Stone Town City Tour">Stone Town City Tour</option>
+                                        <option value="Safari Blue">Safari Blue</option>
+                                        <option value="Quad Bikes">Quad Bikes</option>
+                                        <option value="Jetski & Kayaki Tours in Zanzibar">Jetski & Kayaki Tours in Zanzibar</option>
+                                        <option value="Stand Up Paddling in Zanzibar">Stand Up Paddling in Zanzibar</option>
+                                        <option value="Photography">Photography</option>
+                                        <option value="Mikumi National Park - Inc Flight">Mikumi National Park - Inc Flight</option>
+                                        <option value="Ngorongoro Conservation Area (NCA)">Ngorongoro Conservation Area (NCA)</option>
+                                    </select>
+                                    <label for="destination">Destination</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-select bg-white border-0" name="persons" required>
+                                        <option value="1 Person">1 Person</option>
+                                        <option value="2 Persons">2 Persons</option>
+                                        <option value="3 Persons">3 Persons</option>
+                                    </select>
+                                    <label for="persons">Persons</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-select bg-white border-0" name="categories">
+                                        <option value="Kids">Kids</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                    <label for="categories">Categories</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control bg-white border-0" name="message" placeholder="Special Request" style="height: 100px"></textarea>
+                                    <label for="message">Special Request</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary text-white w-100 py-3" type="submit">Book Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Tour Booking End -->
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+    // Initialize EmailJS with your public key
+    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+
+    document.getElementById("subscribeForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form from refreshing the page
+
+        const email = document.getElementById("email").value;
+
+        // Validate email format
+        if (!email || !email.match(/^\S+@\S+\.\S+$/)) {
+            document.getElementById("responseMessage").innerText = "Please enter a valid email.";
+            return;
+        }
+
+        // Send email via EmailJS
+        emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", { email: email })
+            .then(() => {
+                document.getElementById("responseMessage").innerText = "Thank you for subscribing!";
+                document.getElementById("subscribeForm").reset();
+            })
+            .catch(() => {
+                document.getElementById("responseMessage").innerText = "Oops! Something went wrong. Please try again.";
+            });
+    });
+</script>
+
+
+       <!-- Footer Start -->
+<div class="container-fluid footer py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-6 col-xl-5">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white" id="footer-get-in-touch">Get In Touch</h4>
+                    <p><i class="fas fa-home me-2"></i><span id="footer-address">Zanzibar, Tanzania</span></p>
+                    <p><i class="fas fa-envelope me-2"></i><span id="footer-email"><a href="mailto:reservation@chaguaadventure.com">reservation@chaguaadventure.com</a></span></p>
+                    <p><i class="fas fa-envelope me-2"></i><a href="mailto:info@chaguaadventure.com" id="footer-email">info@chaguaadventure.com</a></p>
+                    <p><i class="fab fa-whatsapp me-2"></i><a href="https://wa.me/254796302036" target="_blank">+254 796 302 036</a></p>
+                    <p><i class="fab fa-whatsapp me-2"></i><a href="https://wa.me/255772656264" target="_blank">+255 772 656 264</a></p>
+                    <div class="d-flex align-items-center">
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/chagua.adventure/" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white" id="footer-company-title">Day Tours</h4>
+                    <a href="cityTour.html"><span id="footer-about">City Tour</span></a>
+                    <a href="swahiliTour.html"><span id="footer-careers">Swahili Cultural Tour</span></a>
+                    <a href="jozani.html"><span id="footer-blog">Jozani Forest</span></a>
+                    <a href="spice.html"><span id="footer-press">Spice Tour</span></a>
+                    <a href="prison.html"><span id="footer-gift-cards">Prison Islan</span></a>
+                    <a href="safeBlue.html"><span id="footer-magazine">Safari Blue</span></a>
+                    <a href="kizimkazi.html"><span id="footer-magazine">Kizimkazi Dolphines</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white" id="footer-support-title">Wild Safaris</h4>
+                    <a href="gombe.html"><span id="footer-contact">Gombe National Park</span></a>
+                    <a href="mikumi.html"><span id="footer-legal-notice">Mikumi National Park</span></a>
+                    <a href="ruaha.html"><span id="footer-privacy-policy">Ruaha National Park</span></a>
+                    <a href="selous.html"><span id="footer-terms">Selous Game Reserve</span></a>
+                    <a href="arusha.html"><span id="footer-sitemap">Arusha National Park</span></a>
+                    <a href="tarangire.html"><span id="footer-cookie-policy">Tarangire National Park</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+        
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Get the current page file name (e.g., index.html, about.html, etc.)
+                let currentPage = window.location.pathname.split("/").pop();
+                
+                // If no file name is found (e.g., if accessing the root directory), default to index.html
+                if (currentPage === "" || currentPage === "index.html") {
+                    currentPage = "index.html";
+                }
+        
+                // Get all navigation links
+                let navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        
+                // Loop through each link to check and apply the 'active' class
+                navLinks.forEach(link => {
+                    let linkPage = link.getAttribute("href");
+                    if (linkPage === currentPage) {
+                        link.classList.add("active");
+                    } else {
+                        link.classList.remove("active");
+                    }
+                });
+            });
+        </script>
+        
+    </body>
+
+</html>
