@@ -304,25 +304,45 @@
 </style>
 
 
+<section id="reviews" class="container mt-5 mb-5">
+    <h2 class="text-center mb-4">Submit a Review</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form action="https://formspree.io/f/xovekeyw" method="POST" class="p-4 border rounded shadow-sm bg-light">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
 
-        <!-- Subscribe Start -->
-<!-- <div class="container-fluid subscribe py-5">
-    <div class="container text-center py-5">
-        <div class="mx-auto text-center" style="max-width: 900px;">
-            <h5 class="subscribe-title px-3">Stay Connected</h5>
-            <h1 class="text-white mb-4">Subscribe to Our Newsletter</h1>
-            <p class="text-white mb-5">Get the latest updates, exclusive offers, and travel tips for exploring the stunning beauty of Zanzibar and Tanzania. Don't miss out on amazing safari adventures and beach getaways!</p>
-            <form id="subscribeForm" action="https://formspree.io/f/xeoaojqg" method="POST">
-                <div class="position-relative mx-auto">
-                    <input class="form-control border-primary rounded-pill w-100 py-3 ps-4 pe-5" type="email" name="email" id="email" placeholder="Enter your email address" required>
-                    <button type="submit" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="rating" class="form-label">Rating:</label>
+                    <select id="rating" name="rating" class="form-select" required>
+                        <option value="5">★★★★★ (5)</option>
+                        <option value="4">★★★★☆ (4)</option>
+                        <option value="3">★★★☆☆ (3)</option>
+                        <option value="2">★★☆☆☆ (2)</option>
+                        <option value="1">★☆☆☆☆ (1)</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="review" class="form-label">Your Review:</label>
+                    <textarea id="review" name="review" rows="5" class="form-control" required></textarea>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary w-100">Submit Review</button>
                 </div>
             </form>
-            <p id="responseMessage" class="mt-3 text-white"></p>
         </div>
     </div>
-</div> -->
-<!-- Subscribe End -->
+</section>
+
 
        
              <!-- Footer Start -->
