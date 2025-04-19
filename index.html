@@ -64,11 +64,11 @@
     <body>
 
         <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
-        </div>
+        </div> -->
         <!-- Spinner End -->
 
          <!-- Navbar & Hero Start -->
@@ -520,9 +520,21 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control bg-white border-0" name="nationality" placeholder="Nationality" required>
+                                    <label for="nationality">nationality</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control bg-white border-0" name="days" placeholder="Number of Days" required>
+                                    <label for="days">Number of Days</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
                                 <div class="form-floating date">
-                                    <input type="text" class="form-control bg-white border-0" name="datetime" placeholder="Date & Time" required>
-                                    <label for="datetime">Date & Time</label>
+                                    <input type="date" class="form-control bg-white border-0" name="date" placeholder="date" required>
+                                    <label for="date">Travel Date</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -574,23 +586,30 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <select class="form-select bg-white border-0" name="persons" required>
-                                        <option value="1 Person">1 Person</option>
-                                        <option value="2 Persons">2 Persons</option>
-                                        <option value="3 Persons">3 Persons</option>
-                                    </select>
+                                    <input type="number" class="form-control bg-white border-0" name="persons" placeholder="Number of Persons" required>
                                     <label for="persons">Persons</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <select class="form-select bg-white border-0" name="categories">
-                                        <option value="Kids">Kids</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
+                                    <input type="number" class="form-control bg-white border-0" name="kids" placeholder="Number of Kids" required>
+                                    <label for="kids">Kids</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="number" class="form-control bg-white border-0" name="budget" placeholder="budget" required>
+                                    <label for="budget">Budget in Dollars</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-select bg-white border-0" name="accomodation">
+                                        <option value="">Budget Accomodation</option>
+                                        <option value="1">Mid-Range Accomodation</option>
+                                        <option value="1">Luxury Accomodation</option>
                                     </select>
-                                    <label for="categories">Categories</label>
+                                    <label for="accomodation">Accomodation Type</label>
                                 </div>
                             </div>
                             <div class="col-12">
