@@ -662,11 +662,12 @@
     padding: 0 0 20px 0;
 }
 .ExploreTour .tab-class .nav-item a.active {
-    background: var(--bs-primary) !important;
+    /* background: var(--bs-primary) !important; */
+    color: black;
 }
 
 .ExploreTour .tab-class .nav-item a.active span {
-    color: var(--bs-white) !important;
+    /* color: var(--bs-white) !important; */
 }
 
 
