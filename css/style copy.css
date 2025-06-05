@@ -21,10 +21,8 @@
 .main-header .header-upper .info-box{
 	position:relative;
 	float:left;
-	/* margin-left:45px; */
 	padding-top:10px;
 	padding-bottom:10px;
-	/* padding-left:50px; */
 	line-height:24px;
 	font-family: 'Open Sans', sans-serif;	
 }
@@ -138,10 +136,6 @@
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
-}
-
-.main-header .header-lower .search-box .form-group input:focus{
-	/*border-color:rgba(255,255,255,0.50);*/	
 }
 
 .main-header .header-lower .search-box .form-group button{
