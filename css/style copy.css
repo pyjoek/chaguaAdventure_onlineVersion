@@ -11,7 +11,6 @@
 	position:relative;
 	margin-left: 2rem;
 	color:#000000;
-	padding:20px 0px;
 }
 
 .main-header .header-upper .info-outer{
@@ -22,9 +21,10 @@
 .main-header .header-upper .info-box{
 	position:relative;
 	float:left;
-	margin-left:45px;
-	padding-top:20px;
-	padding-left:50px;
+	/* margin-left:45px; */
+	padding-top:10px;
+	padding-bottom:10px;
+	/* padding-left:50px; */
 	line-height:24px;
 	font-family: 'Open Sans', sans-serif;	
 }
@@ -50,6 +50,7 @@
 
 .main-header .header-upper .info-box a{
 	position:relative;
+	margin-left: 1rem;
 	color:#6f747d;
 	font-weight:600;	
 }
